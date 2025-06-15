@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhotoMastery - Learn Photography Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">📷 PhotoMastery</div>
+      <div class="actions">
+        <input type="text" placeholder="Search For Course . . ." />
+        <a href="#"><button>Login</button></a>
+        <a href="#"><button>Register</button></a>
+        <a href="#"><button onclick="goToCart()">🛒 Cart (0)</button></a>
+        <a href="#"><button onclick="toggleSupport()">❓ Need Help</button></a>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" onclick="goToLMS()">Courses</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Master Photography From Scratch</h1>
+    <p>Join thousands of learners mastering the art of photography</p>
+    <button onclick="goToLMS()">Explore Courses</button>
+  </section>
+
+  <section id="about">
+    <h2>About the Photographer</h2>
+    <p>John Doe is an award-winning photographer with 15 years of experience. He's taught over 30,000 students globally through expert-designed content.</p>
+  </section>
+
+  <section id="support" style="display:none;">
+    <h2>Support Options</h2>
+    <ul>
+      <li><a href="https://wa.me/919667732250" target="_blank">💬 WhatsApp Support</a></li>
+      <li><a href="mailto:support@photomastery.com">📧 Email Support</a></li>
+      <li><a href="#ticketForm">🎫 Submit a Ticket</a></li>
+    </ul>
+    <form id="ticketForm" onsubmit="sendSupport(event)">
+      <label>Name:</label><input type="text" id="name" required />
+      <label>Email:</label><input type="email" id="email" required />
+      <label>Issue:</label><textarea id="issue" required></textarea>
+      <button type="submit">Submit Ticket</button>
+    </form>
+    <p id="ticketStatus"></p>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Home</li>
+          <li>Courses</li>
+          <li>Blog</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Our Company</h3>
+        <ul>
+          <li>Contact Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Become Teacher</li>
+          <li>All Instructors</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Get In Touch</h3>
+        <p>Noida. UP. 201301<br>+91-9667732250</p>
+        <p>If you need help, reach us via WhatsApp or email.</p>
+      </div>
+    </div>
+    <p class="copyright">
+      © 2024-2025 PhotoMastery. All rights reserved. |
+      <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
